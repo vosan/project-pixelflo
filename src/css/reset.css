@@ -1,34 +1,48 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
+/* ===== Reset indents ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
+/* ===== Typography ===== */
+ul,
+ol {
   list-style: none;
 }
 
+/* ===== Links ===== */
 a {
-  color: currentColor;
+  display: inline-block;
   text-decoration: none;
+  color: currentColor;
 }
 
-button {
-  cursor: pointer;
-}
-
+/* ===== Images ===== */
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+/* ===== Address ===== */
+.address {
+  font-style: normal;
+}
+
+/* ===== Forms ===== */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+button {
+  cursor: pointer;
 }
