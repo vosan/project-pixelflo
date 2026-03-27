@@ -130,8 +130,8 @@
 
   .about-us-container-girl {
     border-radius: 30px;
-        width: 704px;
-        min-height: 243px;
+    width: 704px;
+    min-height: 243px;
   }
 }
 
@@ -155,8 +155,8 @@
     gap: 32px;
   }
 
-   .about-us-list {
+  .about-us-list {
     gap: 32px;
-       margin-bottom: 0;
-   }
+    margin-bottom: 0;
+  }
 }
