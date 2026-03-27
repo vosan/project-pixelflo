@@ -103,7 +103,8 @@
 
 /* Menu panel */
 .burger-menu-wrap {
-  width: 240px;
+  min-width: 240px;
+  width: calc((240px / 375px) * 100vw);
   height: 100vh;
   position: absolute;
   top: 0;
@@ -246,7 +247,8 @@
 
   /* Increase burger menu panel width */
   .burger-menu-wrap {
-    width: 384px;
+    width: calc((384px / 768px) * 100%);
+    min-width: 384px;
   }
 
   /* Adjust burger button size for bigger icon */
