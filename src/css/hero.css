@@ -99,7 +99,6 @@
 }
 
 .hero-title {
-  color: var(--white-background-color);
   max-width: 295px;
   color: var(--color-white);
 
@@ -110,7 +109,7 @@
 }
 
 .hero-title span {
-  color: var(--color-light-green);
+  color: var(--color-light-green-2);
 }
 
 @media only screen and (min-width: 768px) {
