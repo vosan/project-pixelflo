@@ -1,5 +1,58 @@
 <section class="leave-app">
   <div class="container">
-    <h2>leave-app</h2>
+    <h2 class="leave-title">Leave an application</h2>
+    <p class="leave-text">
+      Please use the form below to contact us. Enter your name, email, and
+      message and we'll get back to you shortly.
+    </p>
+    <div class="leave-content">
+      <p class="leave-content-number">1000</p>
+      <p class="leave-content-text">
+        of our online English language lessons! This journey has been full of
+        discovery, growth and unforgettable moments, and we are happy to share
+        this joyful event with you.
+      </p>
+    </div>
+    <form class="leave-form" name="form-application">
+      <div class="leave-form-input-wrapper">
+        <input type="text" class="leave-form-input" name="user-name" placeholder="Name" required />
+        <input type="email" class="leave-form-input" name="email" placeholder="Email" required />
+        <input type="tel" class="leave-form-input" name="phone" placeholder="Phone" required />
+        <textarea class="leave-form-textarea" name="comment" placeholder="Comment" rows="4"></textarea>
+      </div>
+      <fieldset class="leave-radio-group">
+        <legend class="leave-radio-group-title">Choose a teacher</legend>
+        <div class="leave-radio-group-input-wrapper">
+          <label class="leave-radio-group-label">
+            <input class="leave-radio-group-input visually-hidden" type="radio" name="teacher" value="Maria" required
+              checked />
+            <span class="leave-custom-radio"></span>
+            Maria
+          </label>
+          <label class="leave-radio-group-label">
+            <input class="leave-radio-group-input visually-hidden" type="radio" name="teacher" value="Artem" required />
+            <span class="leave-custom-radio"></span>
+            Artem
+          </label>
+          <label class="leave-radio-group-label">
+            <input class="leave-radio-group-input visually-hidden" type="radio" name="teacher" value="Ilona" required />
+            <span class="leave-custom-radio"></span>
+            Ilona
+          </label>
+          <label class="leave-radio-group-label">
+            <input class="leave-radio-group-input visually-hidden" type="radio" name="teacher" value="Volodymyr"
+              required />
+            <span class="leave-custom-radio"></span>
+            Volodymyr
+          </label>
+        </div>
+      </fieldset>
+      <button class="leave-form-btn" type="submit">Send</button>
+      <p class="leave-form-text-privacy-policy">
+        By clicking on “Send” button, you agree to our
+        <a class="leave-form-privacy-policy-link" href="#" target="_blank">Privacy Policy</a>,<br />
+        and allow Promodo to use this information for marketing purposes.
+      </p>
+    </form>
   </div>
 </section>
