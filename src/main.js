@@ -51,4 +51,3 @@ if (burgerBtn && burgerMenu && closeBtn) {
     }
   });
 }
-
