@@ -5,14 +5,17 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/pixelflo/",
-    "preview": "vite preview"
+    "build": "vite build --base=./",
+    "preview": "vite preview",
+    "format": "prettier --write '**/*.{html,css,js}'",
+    "check-format": "prettier --check '**/*.{html,css,js}'"
   },
   "devDependencies": {
     "glob": "^11.0.0",
     "postcss": "^8.4.41",
     "postcss-sort-media-queries": "^5.2.0",
-    "vite": "^5.4.6"
+    "vite": "^5.4.6",
+    "prettier": "^3.2.5"
   },
   "author": "PixelFlow",
   "license": "ISC",
