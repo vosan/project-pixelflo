@@ -18,41 +18,91 @@
       </div>
       <form class="leave-form" name="form-application" autocomplete="off">
         <div class="leave-form-input-wrapper">
-          <input type="text" class="leave-form-input" name="user-name" placeholder="Name" required minlength="2"
-            maxlength="30" pattern="^[A-Za-z]{2,}(?:-[A-Za-z]{2,})?(?: [A-Za-z]{2,}(?:-[A-Za-z]{2,})?)?$"
-            title="Please enter a valid name using English letters only. You can use one or two words, and each word may include a hyphen." />
-          <input type="email" class="leave-form-input" name="email" placeholder="Email" required maxlength="100"
-            title="Please enter a valid email address." />
-          <input type="tel" class="leave-form-input" name="phone" placeholder="Phone" required inputmode="tel"
-            pattern="^\+?[0-9][0-9 ]*[0-9]$" maxlength="16"
-            title="Please enter a valid phone number (8–15 digits, optional + at the beginning)." />
-          <textarea class="leave-form-textarea" name="comment" placeholder="Comment" rows="4" minlength="2"
-            maxlength="500"></textarea>
+          <input
+            type="text"
+            class="leave-form-input"
+            name="user-name"
+            placeholder="Name"
+            required
+            minlength="2"
+            maxlength="30"
+            pattern="^[A-Za-z]{2,}(?:-[A-Za-z]{2,})?(?: [A-Za-z]{2,}(?:-[A-Za-z]{2,})?)?$"
+            title="Please enter a valid name using English letters only. You can use one or two words, and each word may include a hyphen."
+          />
+          <input
+            type="email"
+            class="leave-form-input"
+            name="email"
+            placeholder="Email"
+            required
+            maxlength="100"
+            title="Please enter a valid email address."
+          />
+          <input
+            type="tel"
+            class="leave-form-input"
+            name="phone"
+            placeholder="Phone"
+            required
+            inputmode="tel"
+            pattern="^\+?[0-9][0-9 ]*[0-9]$"
+            maxlength="16"
+            title="Please enter a valid phone number (8–15 digits, optional + at the beginning)."
+          />
+          <textarea
+            class="leave-form-textarea"
+            name="comment"
+            placeholder="Comment"
+            rows="4"
+            minlength="2"
+            maxlength="500"
+          ></textarea>
         </div>
         <fieldset class="leave-radio-group">
           <legend class="leave-radio-group-title">Choose a teacher</legend>
           <div class="leave-radio-group-input-wrapper">
             <label class="leave-radio-group-label">
-              <input class="leave-radio-group-input visually-hidden" type="radio" name="teacher" value="Maria" required
-                checked />
+              <input
+                class="leave-radio-group-input visually-hidden"
+                type="radio"
+                name="teacher"
+                value="Maria"
+                required
+                checked
+              />
               <span class="leave-custom-radio"></span>
               Maria
             </label>
             <label class="leave-radio-group-label">
-              <input class="leave-radio-group-input visually-hidden" type="radio" name="teacher" value="Artem"
-                required />
+              <input
+                class="leave-radio-group-input visually-hidden"
+                type="radio"
+                name="teacher"
+                value="Artem"
+                required
+              />
               <span class="leave-custom-radio"></span>
               Artem
             </label>
             <label class="leave-radio-group-label">
-              <input class="leave-radio-group-input visually-hidden" type="radio" name="teacher" value="Ilona"
-                required />
+              <input
+                class="leave-radio-group-input visually-hidden"
+                type="radio"
+                name="teacher"
+                value="Ilona"
+                required
+              />
               <span class="leave-custom-radio"></span>
               Ilona
             </label>
             <label class="leave-radio-group-label">
-              <input class="leave-radio-group-input visually-hidden" type="radio" name="teacher" value="Volodymyr"
-                required />
+              <input
+                class="leave-radio-group-input visually-hidden"
+                type="radio"
+                name="teacher"
+                value="Volodymyr"
+                required
+              />
               <span class="leave-custom-radio"></span>
               Volodymyr
             </label>
@@ -61,7 +111,9 @@
         <button class="leave-form-btn" type="submit">Send</button>
         <p class="leave-form-text-privacy-policy">
           By clicking on “Send” button, you agree to our
-          <a class="leave-form-privacy-policy-link" href="#" target="_blank">Privacy Policy</a>,<br />
+          <a class="leave-form-privacy-policy-link" href="#" target="_blank"
+            >Privacy Policy</a
+          >,<br />
           and allow Promodo to use this information for marketing purposes.
         </p>
       </form>
