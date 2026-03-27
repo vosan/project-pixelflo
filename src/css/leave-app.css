@@ -68,7 +68,7 @@
   font-size: 14px;
   line-height: 1.3;
   color: #121417;
-  transition: var(--transition-effect);
+  transition: var(--transition-main);
   transition-property: border-color;
 }
 
@@ -132,8 +132,8 @@
   border-radius: 50%;
   position: relative;
   transition:
-    border-color var(--transition-effect),
-    background-color var(--transition-effect);
+    border-color var(--transition-main),
+    background-color var(--transition-main);
 }
 .leave-custom-radio::after {
   content: '';
@@ -145,7 +145,7 @@
   border-radius: 50%;
   background-color: var(--color-green);
   transform: translate(-50%, -50%) scale(0);
-  transition: transform var(--transition-effect);
+  transition: transform var(--transition-main);
 }
 .leave-radio-group-input:checked + .leave-custom-radio {
   border-color: var(--color-green);
@@ -170,7 +170,7 @@
   font-size: 14px;
   line-height: 1.7;
   text-align: center;
-  transition: background-color var(--transition-effect);
+  transition: background-color var(--transition-main);
 }
 .leave-form-btn:hover {
   background-color: var(--color-green-active);
