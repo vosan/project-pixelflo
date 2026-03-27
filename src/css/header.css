@@ -204,20 +204,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition:
-    border-color 0.3s ease,
-    background-color 0.3s ease;
+  transition: border-color 0.3s ease;
 }
 
 .social-link-burger-menu:hover,
 .social-link-burger-menu:focus {
   border-color: rgba(255, 255, 255, 0.3);
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .icon-social-burger-menu {
   fill: var(--color-white);
   transition: fill 0.3s ease;
+}
+
+.social-link-burger-menu:hover .icon-social-burger-menu,
+.social-link-burger-menu:focus .icon-social-burger-menu {
+  fill: var(--color-black);
 }
 
 /* ========================================
@@ -328,10 +330,33 @@
     padding: 8px;
     width: 44px;
     height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s ease;
+  }
+
+  .social-link-item-header:hover,
+  .social-link-item-header:focus-within {
+    border-color: rgba(77, 194, 116, 0.1);
+  }
+
+  .social-link-item-header .social-link-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .icon-social-header {
     width: 28px;
     height: 28px;
+    fill: var(--color-black);
+    opacity: 0.8;
+    transition: fill 0.3s ease;
+  }
+
+  .social-link-item-header:hover .icon-social-header,
+  .social-link-item-header:focus-within .icon-social-header {
+    fill: var(--color-green);
   }
 }
