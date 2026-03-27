@@ -1,6 +1,5 @@
 .section-about-us {
-  width: 335px;
-  margin: 80px auto;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
 }
@@ -55,6 +54,7 @@
 
 .about-us-list {
   list-style: decimal-leading-zero;
+  list-style-position: inside;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -67,7 +67,7 @@
 }
 
 .about-us-list-item {
-  display: flex;
+  display: list-item;
   flex-direction: column;
   border-radius: 16px;
   width: 335px;
@@ -83,6 +83,7 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--color-black);
+margin-top: 16px;
 }
 
 .about-us-container-girl {
