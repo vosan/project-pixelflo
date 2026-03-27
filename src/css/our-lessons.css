@@ -3,7 +3,6 @@
   font-family: var(--font-family-main);
   width: 100%;
   padding: 0 15px;
-  /* Бокові відступи, щоб контент не прилипав до країв на 320px */
   box-sizing: border-box;
   margin: 40px auto;
   display: flex;
@@ -71,11 +70,9 @@
   border-radius: 16px;
   width: 100%;
   box-sizing: border-box;
-  /* Обов'язково для гуми */
   min-height: 400px;
   align-items: center;
   padding: 40px 15px;
-  /* Зменшено боковий паддінг для гуми */
   background: var(--color-white);
 }
 
