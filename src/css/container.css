@@ -1,5 +1,7 @@
 .container {
-  min-width: var(--breakpoint-mobile-min);
+  min-width: calc(
+    var(--breakpoint-mobile-min) - 20px
+  ); /* Adjusted scroll bar width */
   max-width: var(--breakpoint-mobile-adaptive);
   padding-left: 20px;
   padding-right: 20px;
