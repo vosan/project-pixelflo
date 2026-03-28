@@ -102,6 +102,10 @@
     margin: 50px auto;
   }
 
+  .about-us-title-marker::before {
+    height: 16px;
+  }
+
   .about-us-title-container {
     max-width: 704px;
   }
@@ -139,6 +143,10 @@
 @media only screen and (min-width: 1280px) {
   .about-us {
     margin: 75px auto;
+  }
+
+  .about-us-title-marker::before {
+    height: 20px;
   }
 
   .about-us-title-container {
