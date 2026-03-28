@@ -48,28 +48,37 @@
 }
 
 .about-us-list {
-  list-style: decimal-leading-zero;
-  list-style-position: inside;
+  list-style: none;
+  counter-reset: my-counter;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.14286;
-  letter-spacing: -0.02em;
-  color: var(--color-green);
+  align-items: stretch;
   margin-bottom: 20px;
 }
 
 .about-us-list-item {
-  display: list-item;
+  counter-increment: my-counter;
+  display: flex;
   flex-direction: column;
+  align-items: flex-start;
   border-radius: 16px;
-  width: 335px;
+  max-width: 335px;
+  width: 100%;
   min-height: 160px;
-  align-items: center;
-  padding: 32px 52px;
+  padding: 32px 32px;
   background: var(--color-gray);
+}
+
+.about-us-list-item::before {
+  content: counter(my-counter, decimal-leading-zero);
+  text-align: left;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--color-green);
+  margin-bottom: 16px;
 }
 
 .about-us-list-item-text {
@@ -78,7 +87,6 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--color-black);
-  margin-top: 16px;
 }
 
 .about-us-container-girl {
@@ -125,16 +133,17 @@
   .about-us-list {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 32px;
+    gap: 32px;
   }
 
   .about-us-list-item {
+    
     width: calc((100% - 32px) / 2);
   }
 
   .about-us-container-girl {
     border-radius: 30px;
-    width: 704px;
+    width: 100%;
     min-height: 243px;
   }
 }
