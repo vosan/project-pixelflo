@@ -1,14 +1,16 @@
-/* #region Mobile view */
+/* #region Mobile view (Rubber up to 374px) */
 .our-lessons {
   font-family: var(--font-family-main);
-  width: 335px;
-  margin: 80px auto;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
 }
 
 .lessons-title-info {
-  width: 335px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,7 +24,6 @@
   font-size: 32px;
   line-height: 113%;
   letter-spacing: -0.02em;
-  text-align: center;
   color: var(--color-black);
 }
 
@@ -40,7 +41,7 @@
   width: 100%;
   height: 12px;
   z-index: -1;
-  background: #bee8cc;
+  background: var(--color-light-green-2);
   border-radius: 8px;
 }
 
@@ -51,7 +52,6 @@
   font-weight: var(--font-weight-regular);
   font-size: 14px;
   line-height: 171%;
-  text-align: center;
   color: rgba(18, 20, 23, 0.5);
 }
 
@@ -68,10 +68,11 @@
   flex-direction: column;
   border: 1px solid var(--color-green);
   border-radius: 16px;
-  width: 336px;
+  width: 100%;
+  box-sizing: border-box;
   min-height: 400px;
   align-items: center;
-  padding: 40px 0;
+  padding: 40px 15px;
   background: var(--color-white);
 }
 
@@ -111,13 +112,12 @@
 
 .lesson-description {
   margin: 0;
-  margin-inline: 20px;
+  margin-top: 40px;
   font-weight: var(--font-weight-regular);
   font-size: 14px;
   line-height: 171%;
   text-align: center;
   color: rgba(18, 20, 23, 0.5);
-  margin-top: 40px;
 }
 
 .lesson-card--highlighted .lesson-description {
@@ -130,8 +130,8 @@
   justify-content: center;
   border: 1px solid var(--color-border-white-alpha);
   border-radius: 12px;
-  padding: 13px 77px;
-  width: 295px;
+  padding: 13px 20px;
+  width: 100%;
   height: 52px;
   background-color: var(--color-green);
   margin-top: auto;
@@ -139,6 +139,7 @@
   font-size: 14px;
   line-height: 171%;
   color: var(--color-white);
+  box-sizing: border-box;
   transition-property: color, background-color, transform;
   transition-duration: 300ms, 300ms, 0.1s;
   transition-timing-function: ease-in, ease-in, ease;
@@ -161,165 +162,90 @@
 
 /* #endregion */
 
+/* #region Mobile Adaptive view (375px) */
+@media only screen and (min-width: 375px) {
+  .our-lessons {
+    width: 335px;
+    padding: 0;
+  }
+
+  .lessons-title-info {
+    width: 335px;
+  }
+
+  .lesson-card {
+    width: 336px;
+    padding: 40px 0;
+  }
+
+  .lesson-card-btn {
+    width: 295px;
+    padding: 13px 77px;
+  }
+
+  .lesson-description {
+    margin-inline: 20px;
+  }
+}
+
+/* #endregion */
+
 /* #region Tablet view */
 @media only screen and (min-width: 768px) {
   .our-lessons {
-    font-family: var(--font-family-main);
     width: 704px;
-    margin: 100px auto;
-    display: flex;
-    flex-direction: column;
+    margin: 50px auto;
   }
 
   .lessons-title-info {
     width: 704px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 0 auto 64px;
   }
 
   .section-title {
-    text-align: center;
-    margin: 0;
-    font-weight: var(--font-weight-bold);
     font-size: 40px;
     line-height: 120%;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: var(--color-black);
-  }
-
-  .section-title-marker {
-    position: relative;
-    z-index: 1;
-    display: inline-block;
   }
 
   .section-title-marker::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    width: 100%;
     height: 20px;
-    z-index: -1;
-    background: #bee8cc;
-    border-radius: 8px;
   }
 
   .section-description {
-    margin: 0;
-    margin-top: 16px;
-    text-align: center;
-    font-weight: var(--font-weight-regular);
     font-size: 18px;
     line-height: 167%;
-    text-align: center;
-    color: rgba(18, 20, 23, 0.5);
   }
 
   .lessons-container {
-    padding: 0;
-    list-style-type: none;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
   }
 
   .lesson-card {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--color-green);
     border-radius: 30px;
-    width: 336px;
     min-height: 404px;
-    align-items: center;
     padding: 32px 0;
-    background: var(--color-white);
-  }
-
-  .lesson-card--highlighted {
-    border: none;
-    background: var(--color-green);
-    color: var(--color-white);
-  }
-
-  .lesson-title {
-    font-weight: var(--font-weight-bold);
-    font-size: 20px;
-    line-height: 120%;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: var(--color-black);
-  }
-
-  .lesson-card--highlighted .lesson-title {
-    color: inherit;
   }
 
   .lesson-price {
-    font-family: var(--font-family-main);
-    font-weight: var(--font-weight-bold);
-    font-size: 32px;
     line-height: 138%;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: var(--color-black);
-    margin-top: 16px;
-  }
-
-  .lesson-card--highlighted .lesson-price {
-    color: inherit;
   }
 
   .lesson-description {
     width: 304px;
-    margin: 0;
     margin-inline: 16px;
-    font-weight: var(--font-weight-regular);
     font-size: 16px;
     line-height: 150%;
-    text-align: center;
-    color: rgba(18, 20, 23, 0.5);
     margin-top: 32px;
   }
 
-  .lesson-card--highlighted .lesson-description {
-    color: rgba(255, 255, 255, 0.7);
-  }
-
   .lesson-card-btn {
-    border: 1px solid var(--color-border-white-alpha);
-    border-radius: 12px;
     padding: 15px 62px;
     width: 304px;
     height: 60px;
-    background-color: var(--color-green);
-    margin-top: auto;
-    font-weight: var(--font-weight-bold);
     font-size: 18px;
     line-height: 156%;
-    color: var(--color-white);
-    transition-property: color, background-color, transform;
-    transition-duration: 300ms, 300ms, 0.1s;
-    transition-timing-function: ease-in, ease-in, ease;
-  }
-
-  .lesson-card-btn:hover,
-  .lesson-card-btn:focus {
-    background-color: var(--color-green-active);
-  }
-
-  .lesson-card--highlighted .lesson-card-btn:hover,
-  .lesson-card--highlighted .lesson-card-btn:focus {
-    background-color: var(--color-white);
-    color: var(--color-green);
-  }
-
-  .lesson-card-btn:active {
-    transform: scale(0.9);
   }
 }
 
@@ -328,162 +254,31 @@
 /* #region Desktop view */
 @media only screen and (min-width: 1280px) {
   .our-lessons {
-    font-family: var(--font-family-main);
     width: 1024px;
-    margin: 150px auto;
-    display: flex;
-    flex-direction: column;
+    margin: 75px auto;
   }
 
   .lessons-title-info {
     width: 832px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto 64px;
-  }
-
-  .section-title {
-    text-align: center;
-    margin: 0;
-    font-weight: var(--font-weight-bold);
-    font-size: 40px;
-    line-height: 120%;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: var(--color-black);
-  }
-
-  .section-title-marker {
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-  }
-
-  .section-title-marker::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    width: 100%;
-    height: 20px;
-    z-index: -1;
-    background: #bee8cc;
-    border-radius: 8px;
   }
 
   .section-description {
-    margin: 0;
-    margin-top: 16px;
     width: 665px;
-    text-align: center;
-    font-weight: var(--font-weight-regular);
-    font-size: 18px;
-    line-height: 167%;
-    text-align: center;
-    color: rgba(18, 20, 23, 0.5);
-  }
-
-  .lessons-container {
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
   }
 
   .lesson-card {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--color-green);
-    border-radius: 30px;
     width: 320px;
-    min-height: 404px;
-    align-items: center;
-    padding: 32px 0;
-    background: var(--color-white);
-  }
-
-  .lesson-card--highlighted {
-    border: none;
-    background: var(--color-green);
-    color: var(--color-white);
-  }
-
-  .lesson-title {
-    font-weight: var(--font-weight-bold);
-    font-size: 20px;
-    line-height: 120%;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: var(--color-black);
-  }
-
-  .lesson-card--highlighted .lesson-title {
-    color: inherit;
-  }
-
-  .lesson-price {
-    font-family: var(--font-family-main);
-    font-weight: var(--font-weight-bold);
-    font-size: 32px;
-    line-height: 138%;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: var(--color-black);
-    margin-top: 16px;
-  }
-
-  .lesson-card--highlighted .lesson-price {
-    color: inherit;
   }
 
   .lesson-description {
     width: 255px;
-    margin: 0;
     margin-inline: 33px;
-    font-weight: var(--font-weight-regular);
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    color: rgba(18, 20, 23, 0.5);
     margin-top: 16px;
   }
 
-  .lesson-card--highlighted .lesson-description {
-    color: rgba(255, 255, 255, 0.7);
-  }
-
   .lesson-card-btn {
-    border: 1px solid var(--color-border-white-alpha);
-    border-radius: 12px;
     padding: 15px 38px;
     width: 256px;
-    height: 60px;
-    background-color: var(--color-green);
-    margin-top: auto;
-    font-weight: var(--font-weight-bold);
-    font-size: 18px;
-    line-height: 156%;
-    color: var(--color-white);
-    transition-property: color, background-color, transform;
-    transition-duration: 300ms, 300ms, 0.1s;
-    transition-timing-function: ease-in, ease-in, ease;
-  }
-
-  .lesson-card-btn:hover,
-  .lesson-card-btn:focus {
-    background-color: var(--color-green-active);
-  }
-
-  .lesson-card--highlighted .lesson-card-btn:hover,
-  .lesson-card--highlighted .lesson-card-btn:focus {
-    background-color: var(--color-white);
-    color: var(--color-green);
-  }
-
-  .lesson-card-btn:active {
-    transform: scale(0.9);
   }
 }
 
