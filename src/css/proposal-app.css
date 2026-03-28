@@ -1,7 +1,7 @@
 /* ===== Banner Section ===== */
 
 .proposal-app {
-  margin-bottom: 80px;
+  padding: 40px 0;
 }
 
 .banner-inner {
@@ -118,6 +118,8 @@
 .features-text {
   font-size: var(--font-size-xs);
   line-height: 1.43;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.2em;
   color: var(--color-black);
 }
 
@@ -125,6 +127,8 @@
 
 .cta-button {
   height: var(--button-height-medium);
+  width: 255px;
+  margin: 0 auto;
   padding: 14px 58px;
   background-color: var(--color-green);
   color: var(--color-white);
@@ -151,11 +155,11 @@
 /*  Tablet (768px+) */
 @media screen and (min-width: 768px) {
   .proposal-app {
-    margin-bottom: 100px;
+    padding: 50px 0;
   }
 
   .banner-inner {
-    padding: 64px 16px 90px;
+    padding: 64px 16px 93px;
     border-radius: 30px;
     overflow: visible;
   }
@@ -169,7 +173,7 @@
 
   .card {
     padding: 64px 32px;
-    gap: 0px;
+    gap: 20px;
   }
 
   .card-image {
@@ -182,13 +186,16 @@
   }
 
   .cta-button {
-    max-width: 306px;
+    width: 306px;
     font-size: var(--font-size-md);
     line-height: 1.55;
   }
 
   .features-list {
     min-width: 451px;
+  }
+  .features-item {
+    gap: 16px
   }
 
   .features-text {
@@ -206,11 +213,11 @@
 /*  Desktop (1280px+)  */
 @media screen and (min-width: 1280px) {
   .proposal-app {
-    margin-bottom: 150px;
+    padding: 75px 0;
   }
 
   .banner-inner {
-    padding: 64px;
+    padding: 64px 64px 70px;
   }
 
   .banner-title {
@@ -227,7 +234,7 @@
   }
 
   .features-list {
-    margin-bottom: 40px;
+    margin-bottom: 16px;
   }
 
   .stacked-cards-wrapper {
