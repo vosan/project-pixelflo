@@ -1,129 +1,137 @@
+/* ===== Reviews Section ===== */
+
 /* #region Mobile view */
 
 .reviews {
-  font-family: var(--font-family-main);
-  width: 335px;
-  margin: 80px auto;
-  display: flex;
-  flex-direction: column;
+  padding: 40px 0;
 }
 
-.reviews__head {
-  width: 335px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto 40px;
+.reviews-head {
+  margin-bottom: 40px;
 }
 
-/* .section-title and .section-description are shared global styles */
+.reviews-title {
+  margin-bottom: 16px;
+}
 
-.reviews__list {
-  padding: 0;
-  list-style-type: none;
+.reviews-description {
+  font-weight: var(--font-weight-regular);
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.5);
+}
+
+.reviews-list {
+  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.reviews__item {
-  background: var(--color-gray);
-  border-radius: 16px;
-  width: 335px;
+.reviews-item {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   padding: 20px;
-  gap: 20px;
+  background-color: var(--color-gray);
+  border-radius: 16px;
 }
 
-/* Green banner at the top of each card */
-.reviews__card-header {
-  background: var(--color-green);
-  border-radius: 8px;
-  height: 78px;
+/* ===== Green banner (avatar + name) ===== */
+
+.reviews-card-header {
   display: flex;
   align-items: center;
-  padding: 0 14px;
   gap: 8px;
+  height: 78px;
+  padding: 0 14px;
+  background-color: var(--color-green);
+  border-radius: 8px;
 }
 
-.reviews__avatar {
+.reviews-avatar {
+  flex-shrink: 0;
   width: 50px;
   height: 50px;
   border-radius: var(--radius-full);
   object-fit: cover;
-  flex-shrink: 0;
 }
 
-.reviews__student-info {
+.reviews-student-info {
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
 
-.reviews__student-name {
+.reviews-student-name {
   font-weight: var(--font-weight-bold);
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--color-white);
-  margin: 0;
 }
 
-.reviews__student-role {
+.reviews-student-role {
   font-weight: var(--font-weight-regular);
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   color: rgba(255, 255, 255, 0.5);
-  margin: 0;
 }
 
-.reviews__text {
+/* ===== Review text ===== */
+
+.reviews-text {
   font-weight: var(--font-weight-regular);
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   color: rgba(18, 20, 23, 0.5);
-  margin: 0;
-  /* Extra horizontal indent to align with the avatar inside the banner */
   padding: 0 14px;
 }
 
 /* #endregion */
 
 /* #region Tablet view */
-@media only screen and (min-width: 768px) {
+
+@media screen and (min-width: 768px) {
   .reviews {
-    width: 704px;
-    margin: 100px auto;
+    padding: 50px 0;
   }
 
-  .reviews__head {
-    width: 704px;
-    margin: 0 auto 64px;
+  .reviews-head {
+    margin-bottom: 64px;
   }
 
-  .reviews__list {
+  .reviews-description {
+    font-size: 18px;
+    line-height: 1.67;
+    max-width: 647px;
+    margin: 0 auto;
+  }
+
+  .reviews-list {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 32px;
   }
 
-  .reviews__item {
-    width: 336px;
-    min-height: 326px;
-    border-radius: 30px;
+  .reviews-item {
+    flex-basis: 336px;
+    flex-shrink: 0;
+    gap: 32px;
     padding: 32px 16px;
-    gap: 32px;
+    border-radius: 30px;
   }
 
-  .reviews__card-header {
+  .reviews-card-header {
     border-radius: 15px;
     padding: 0 16px;
   }
 
-  .reviews__text {
+  .reviews-text {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     padding: 0 16px;
   }
 }
@@ -131,25 +139,18 @@
 /* #endregion */
 
 /* #region Desktop view */
-@media only screen and (min-width: 1280px) {
+
+@media screen and (min-width: 1280px) {
   .reviews {
-    width: 1024px;
-    margin: 150px auto;
+    padding: 75px 0;
   }
 
-  .reviews__head {
-    width: 832px;
-    margin: 0 auto 64px;
-  }
-
-  .reviews__list {
-    flex-direction: row;
+  .reviews-list {
     flex-wrap: nowrap;
-    gap: 32px;
   }
 
-  .reviews__item {
-    width: 320px;
+  .reviews-item {
+    flex-basis: 320px;
   }
 }
 
