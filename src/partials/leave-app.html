@@ -16,7 +16,7 @@
           this joyful event with you.
         </p>
       </div>
-      <form class="leave-form" name="form-application" autocomplete="off">
+      <form class="leave-form" name="form-application" autocomplete="on">
         <div class="leave-form-input-wrapper">
           <input
             type="text"
@@ -28,6 +28,7 @@
             maxlength="30"
             pattern="^[A-Za-z]{2,}(?:-[A-Za-z]{2,})?(?: [A-Za-z]{2,}(?:-[A-Za-z]{2,})?)?$"
             title="Please enter a valid name using English letters only. You can use one or two words, and each word may include a hyphen."
+            autocomplete="name"
           />
           <input
             type="email"
@@ -37,6 +38,7 @@
             required
             maxlength="100"
             title="Please enter a valid email address."
+            autocomplete="email"
           />
           <input
             type="tel"
@@ -48,15 +50,20 @@
             pattern="^\+?[0-9][0-9 ]*[0-9]$"
             maxlength="16"
             title="Please enter a valid phone number (8–15 digits, optional + at the beginning)."
+            autocomplete="tel"
           />
-          <textarea
-            class="leave-form-textarea"
-            name="comment"
-            placeholder="Comment"
-            rows="4"
-            minlength="2"
-            maxlength="500"
-          ></textarea>
+          <label>
+            <textarea
+              class="leave-form-textarea"
+              name="comment"
+              placeholder="Comment"
+              rows="4"
+              minlength="2"
+              maxlength="500"
+              required
+              autocomplete="off"
+            ></textarea>
+          </label>
         </div>
         <fieldset class="leave-radio-group">
           <legend class="leave-radio-group-title">Choose a teacher</legend>
