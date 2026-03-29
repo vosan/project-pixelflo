@@ -1,5 +1,5 @@
 .about-us {
-  margin: 40px auto;
+  margin: 80px auto;
   display: flex;
   flex-direction: column;
 }
@@ -124,7 +124,7 @@
 /* #region Tablet view */
 @media only screen and (min-width: 768px) {
   .about-us {
-    margin: 50px auto;
+    margin: 100px auto;
   }
 
   .about-us-title-marker::before {
@@ -168,7 +168,8 @@
 /* #region Desktop view */
 @media only screen and (min-width: 1280px) {
   .about-us {
-    margin: 75px auto;
+    width: 1152px;
+    margin: 96px auto;
   }
 
   .about-us-title-marker::before {
@@ -186,11 +187,23 @@
 
   .about-us-container {
     display: flex;
+    justify-content: space-between;
     gap: 32px;
   }
 
   .about-us-list {
+    display: flex;
+    flex-wrap: wrap;
     gap: 32px;
     margin-bottom: 0;
+  }
+
+  .about-us-list-item {
+    width: 325px;
+  }
+
+  .about-us-container-girl {
+    width: 310px;
+    flex-shrink: 0;
   }
 }
