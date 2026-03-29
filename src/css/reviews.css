@@ -3,7 +3,8 @@
 /* #region Mobile view */
 
 .reviews {
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 .reviews-head {
@@ -99,7 +100,8 @@
 
 @media screen and (min-width: 768px) {
   .reviews {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 100px;
   }
 
   .reviews-head {
@@ -154,7 +156,8 @@
 
 @media screen and (min-width: 1280px) {
   .reviews {
-    padding: 75px 0;
+    padding-top: 75px;
+    padding-bottom: 150px;
   }
 
   .reviews-list {
