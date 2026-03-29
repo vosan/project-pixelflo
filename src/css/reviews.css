@@ -38,6 +38,10 @@
   border-radius: 16px;
 }
 
+.reviews-item:nth-child(n + 2) {
+  display: none;
+}
+
 /* ===== Green banner (avatar + name) ===== */
 
 .reviews-card-header {
@@ -124,6 +128,14 @@
     border-radius: 30px;
   }
 
+  .reviews-item:nth-child(n + 2) {
+    display: flex;
+  }
+
+  .reviews-item:nth-child(3) {
+    display: none;
+  }
+
   .reviews-card-header {
     border-radius: 15px;
     padding: 0 16px;
@@ -151,6 +163,10 @@
 
   .reviews-item {
     flex-basis: 320px;
+  }
+
+  .reviews-item:nth-child(3) {
+    display: flex;
   }
 }
 
