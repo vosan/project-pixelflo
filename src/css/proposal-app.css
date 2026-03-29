@@ -1,7 +1,7 @@
 /* ===== Banner Section ===== */
 
 .proposal-app {
-  margin-bottom: 80px;
+  padding: 40px 0;
 }
 
 .banner-inner {
@@ -16,7 +16,7 @@
 
 .banner-title {
   font-weight: var(--font-weight-bold);
-  font-size: 32px;
+  font-size: 38px;
   line-height: 1.05;
   color: var(--color-white);
 }
@@ -46,7 +46,8 @@
 .stacked-cards-wrapper {
   position: relative;
   z-index: 1;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .stacked-cards-wrapper::before,
@@ -63,13 +64,13 @@
 }
 
 .stacked-cards-wrapper::before {
-  z-index: -2;
+  z-index: -1;
   transform: rotate(-9deg);
   background-color: var(--color-light-green);
 }
 
 .stacked-cards-wrapper::after {
-  z-index: -1;
+  z-index: -2;
   transform: rotate(11deg);
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -80,7 +81,7 @@
   font-weight: var(--font-weight-bold);
   font-size: 20px;
   line-height: 2;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em;
   margin-bottom: var(--gap-lg);
   color: var(--color-black);
 }
@@ -118,6 +119,8 @@
 .features-text {
   font-size: var(--font-size-xs);
   line-height: 1.43;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.02em;
   color: var(--color-black);
 }
 
@@ -125,12 +128,15 @@
 
 .cta-button {
   height: var(--button-height-medium);
+  width: 255px;
+  margin: 0 auto;
   padding: 14px 58px;
   background-color: var(--color-green);
   color: var(--color-white);
   border-radius: var(--radius-lg);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-xs);
+  line-height: 1.71;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -144,17 +150,17 @@
 .card-image img {
   max-width: 214px;
   margin: 0 auto;
-  padding-bottom: 16px;
 }
 
 /*  Tablet (768px+) */
 @media screen and (min-width: 768px) {
   .proposal-app {
-    margin-bottom: 100px;
+    padding: 50px 0;
   }
 
   .banner-inner {
-    padding: 64px 16px;
+    padding: 64px 16px 30px;
+    gap: 32px;
     border-radius: 30px;
     overflow: visible;
   }
@@ -166,9 +172,14 @@
     max-width: 776px;
   }
 
+  .stacked-cards-wrapper {
+    margin-bottom: 56px;
+    margin-top: 56px;
+  }
+
   .card {
     padding: 64px 32px;
-    gap: 0px;
+    gap: 20px;
   }
 
   .card-image {
@@ -178,14 +189,23 @@
   .card-subtitle {
     font-size: 40px;
     line-height: 1.2;
+    margin-bottom: 32px;
   }
 
   .cta-button {
-    max-width: 306px;
+    height: var(--button-height-large);
+    width: 306px;
+    font-size: var(--font-size-md);
+    line-height: 1.55;
   }
 
   .features-list {
     min-width: 451px;
+    margin-bottom: 32px;
+  }
+
+  .features-item {
+    gap: 16px;
   }
 
   .features-text {
@@ -203,36 +223,45 @@
 /*  Desktop (1280px+)  */
 @media screen and (min-width: 1280px) {
   .proposal-app {
-    margin-bottom: 150px;
+    padding: 75px 0;
   }
 
   .banner-inner {
-    padding: 64px;
+    padding: 64px 64px 70px;
+  }
+
+  .banner-title {
+    padding: 0;
   }
 
   .card {
-    padding: 64px 0 64px 64px;
+    padding: 60px 0 70px 64px;
     gap: 40px;
   }
 
-  .features-item {
-    align-items: flex-start;
+  .card-subtitle {
+    margin-bottom: 40px;
   }
+
   .features-list {
     margin-bottom: 40px;
   }
 
+  .stacked-cards-wrapper {
+    margin-bottom: 72px;
+  }
+
   .stacked-cards-wrapper::before {
-    z-index: -2;
-    transform: translateX(-18px) rotate(-8deg);
+    transform: translateX(6px) rotate(-8deg);
+    height: 463px;
+    width: 1050px;
+    margin-left: -25px;
   }
 
   .stacked-cards-wrapper::after {
-    z-index: -1;
-    transform: rotate(6deg);
-    top: 5px;
-    bottom: 5px;
-    left: 26px;
-    right: -10px;
+    height: 402px;
+    width: 1011px;
+    margin: 38px 3px;
+    transform: translateX(6px) rotate(11deg);
   }
 }
