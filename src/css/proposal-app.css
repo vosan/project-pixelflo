@@ -150,7 +150,6 @@
 .card-image img {
   max-width: 214px;
   margin: 0 auto;
-
 }
 
 /*  Tablet (768px+) */
@@ -206,7 +205,7 @@
   }
 
   .features-item {
-    gap: 16px
+    gap: 16px;
   }
 
   .features-text {
@@ -243,7 +242,6 @@
   .card-subtitle {
     margin-bottom: 40px;
   }
-
 
   .features-list {
     margin-bottom: 40px;
