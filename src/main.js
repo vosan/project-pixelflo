@@ -57,13 +57,14 @@ if (burgerBtn && burgerMenu && closeBtn) {
 ======================================== */
 
 // URL del Google Apps Script Web App da variabile d'ambiente
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxnjabHays6ULYsdzxQdrHns1eWEeqQaZsp0KADQjU0lkz3nd5AeH-0I9_yDvsUDJE/exec';
+const GOOGLE_SCRIPT_URL =
+  'https://script.google.com/macros/s/AKfycbxnjabHays6ULYsdzxQdrHns1eWEeqQaZsp0KADQjU0lkz3nd5AeH-0I9_yDvsUDJE/exec';
 
 // Get form element
 const leaveForm = document.querySelector('form[name="form-application"]');
 
 if (leaveForm) {
-  leaveForm.addEventListener('submit', async function(e) {
+  leaveForm.addEventListener('submit', async function (e) {
     e.preventDefault(); // Prevent default form submission
 
     // Get form data
@@ -73,7 +74,7 @@ if (leaveForm) {
       email: formData.get('email'),
       phone: formData.get('phone'),
       comment: formData.get('comment'),
-      teacher: formData.get('teacher')
+      teacher: formData.get('teacher'),
     };
 
     // Get submit button to show loading state
@@ -92,18 +93,19 @@ if (leaveForm) {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify(data),
       });
 
       // Reset form
       leaveForm.reset();
 
       // Reset the first radio button to be checked
-      const firstRadio = leaveForm.querySelector('input[type="radio"][value="Maria"]');
+      const firstRadio = leaveForm.querySelector(
+        'input[type="radio"][value="Maria"]'
+      );
       if (firstRadio) {
         firstRadio.checked = true;
       }
-
     } catch (error) {
       console.error('Error submitting form:', error);
     } finally {
