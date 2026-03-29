@@ -199,11 +199,11 @@
   }
 
   .about-us-list-item {
-     width: 325px; 
+    width: 325px;
   }
 
   .about-us-container-girl {
-    width: 310px;  
+    width: 310px;
     flex-shrink: 0;
   }
 }
