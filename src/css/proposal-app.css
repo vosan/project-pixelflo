@@ -228,6 +228,7 @@
 
   .banner-inner {
     padding: 64px 64px 70px;
+    gap: 72px;
   }
 
   .banner-title {
@@ -248,7 +249,8 @@
   }
 
   .stacked-cards-wrapper {
-    margin-bottom: 72px;
+    margin-bottom: 56px;
+    margin-top: 66px;
   }
 
   .stacked-cards-wrapper::before {
