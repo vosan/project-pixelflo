@@ -168,6 +168,7 @@
 /* #region Desktop view */
 @media only screen and (min-width: 1280px) {
   .about-us {
+    width: 1152px;
     margin: 75px auto;
   }
 
@@ -186,11 +187,23 @@
 
   .about-us-container {
     display: flex;
+    justify-content: space-between;
     gap: 32px;
   }
 
   .about-us-list {
+    display: flex;
+    flex-wrap: wrap;
     gap: 32px;
     margin-bottom: 0;
+  }
+
+  .about-us-list-item {
+     width: 325px; 
+  }
+
+  .about-us-container-girl {
+    width: 310px;  
+    flex-shrink: 0;
   }
 }
