@@ -1,5 +1,5 @@
 .about-us {
-  margin: 40px auto;
+  margin: 80px auto;
   display: flex;
   flex-direction: column;
 }
@@ -124,7 +124,7 @@
 /* #region Tablet view */
 @media only screen and (min-width: 768px) {
   .about-us {
-    margin: 50px auto;
+    margin: 100px auto;
   }
 
   .about-us-title-marker::before {
@@ -169,7 +169,7 @@
 @media only screen and (min-width: 1280px) {
   .about-us {
     width: 1152px;
-    margin: 75px auto;
+    margin: 96px auto;
   }
 
   .about-us-title-marker::before {
