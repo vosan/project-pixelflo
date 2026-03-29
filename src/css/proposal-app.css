@@ -128,9 +128,10 @@
 
 .cta-button {
   height: var(--button-height-medium);
-  width: 255px;
+  max-width: 255px;
+  width: 100%;
   margin: 0 auto;
-  padding: 14px 58px;
+  padding: 14px 20px;
   background-color: var(--color-green);
   color: var(--color-white);
   border-radius: var(--radius-lg);
@@ -145,6 +146,10 @@
 
 .cta-button:hover {
   background-color: var(--color-green-active);
+}
+
+.card-content {
+  width: 100%;
 }
 
 .card-image img {
