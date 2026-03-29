@@ -4,7 +4,7 @@
   width: 100%;
   padding: 0 15px;
   box-sizing: border-box;
-  margin: 80px auto;
+  margin: 80px auto 40px;
   display: flex;
   flex-direction: column;
 }
@@ -194,7 +194,7 @@
 @media only screen and (min-width: 768px) {
   .our-lessons {
     width: 704px;
-    margin: 100px auto;
+    margin: 100px auto 50px;
   }
 
   .lessons-title-info {
@@ -255,7 +255,7 @@
 @media only screen and (min-width: 1280px) {
   .our-lessons {
     width: 1024px;
-    margin: 150px auto;
+    margin: 150px auto 75px;
   }
 
   .lessons-title-info {
